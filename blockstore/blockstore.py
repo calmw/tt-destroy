@@ -6,7 +6,7 @@ currPath = os.path.dirname(os.path.abspath(__file__))
 
 
 def get_poll_height():
-    pool_height_file = "{}/pool_height.json".format(currPath)
+    pool_height_file = "{}/poll_height.json".format(currPath)
     try:
         with open(pool_height_file) as f:
             pool_height = json.load(f)
@@ -17,7 +17,7 @@ def get_poll_height():
 
 
 def save_poll_height(height):
-    pool_height_file = "{}/pool_height.json".format(currPath)
+    pool_height_file = "{}/poll_height.json".format(currPath)
     try:
         with open(pool_height_file, "w") as f:
             json.dump({"height": height}, f)

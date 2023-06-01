@@ -3,7 +3,7 @@ import logging
 import config.config
 
 
-# mysql 连接
+# mysql
 def mysql_db():
     try:
         conn = pymysql.connect(
